@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./app/src/js/root.js",
+  entry: "./app/src/js/react/components/root.jsx",
   output: {
     path: __dirname + "/app/assets",
     filename: "index.js"
@@ -7,10 +7,9 @@ module.exports = {
   module: {
     loaders: [
       {
-        test:      /\.js$/,
-        loaders:   ['babel'],
+        test:      /\.jsx$/,
+        loaders:   ['babel', 'jsx'],
         excludes:  /node_modules/
-
       }
     ]
   }
