@@ -1,9 +1,5 @@
 var React = require('react')
 
-var Hello = React.createClass({
-  render() {
-    return <h1>{this.props.greeting}</h1>
-  }
-})
+var Hello = (props) => (<h1>{props.greeting}</h1>)
 
 module.exports = Hello
