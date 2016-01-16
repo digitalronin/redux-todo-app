@@ -4,4 +4,14 @@ module.exports = {
     path: __dirname + "/app/assets",
     filename: "index.js"
   },
+  module: {
+    loaders: [
+      {
+        test:      /\.js$/,
+        loaders:   ['babel'],
+        excludes:  /node_modules/
+
+      }
+    ]
+  }
 };
